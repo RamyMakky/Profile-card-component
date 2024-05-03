@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Outfit:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    --webkit-box-sizing: border-box;
+    --moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+
+body{
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 18px;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--Dark-cyan);
+    margin: 1.5rem;
+    min-height: 100vh;
+    position: relative;
+    /* background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: right 48vw bottom 40vh, left 45vw top 44vh; */
+}
+
+.bg-image{
+        position: absolute;
+        z-index: -1;
+}
+
+.container{
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    /* overflow hidden 34an y5fy ay 7aga zyada fy el container */;
+    margin-bottom: 40px;
+    z-index: 999;
+    /* 999 34an lma agy a7ot el background */
+}
+
+.container .profile{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -50px;
+}
+
+.container .profile img{
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.container .name{
+    margin-top: 60px;
+    text-align: center;
+    font-size: 25px;
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.container .name span{
+    color: var(--Dark-gray);
+    font-weight: 400;
+    font-size: 18px;
+    margin-left: 8px;
+}
+
+.container .city{
+    text-align: center;
+    margin-top: 10px;
+    color: var(--Dark-gray);
+    margin-bottom: 1rem;
+}
+
+hr{
+    border: none;
+    height: 1px;
+    background-color: var(--Dark-gray);
+    margin-bottom: 2rem;
+    opacity: 0;
+}
+
+.container .details{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+    margin-left: 9rem;
+}
+
+.container .details .num{
+    text-align: center;
+    font-weight: 700;
+    color: var(--Very-dark-desaturated-blue);
+    margin-bottom: 5px;
+}
+
+.container .details .details-1{
+    font-size: 15px;
+    color: var(--Dark-grayish-blue);
+    text-align: center;
+}
